@@ -35,3 +35,33 @@
 /************************* YOUR SETTINGS *************************/
 
 /* add your css here, feel free to use comments and order them logically for better readability */
+
+
+body{
+   grid-area: body;
+}
+header{
+   grid-area: header;
+}
+
+nav{
+   grid-area: nav;
+}
+
+main{
+   grid-area: main;
+}
+
+footer{
+   grid-area: footer;
+}
+
+h3{
+   font-size: 1rem;
+   border-style: solid;
+   
+}
+
+h1{
+   font-size: 10,0rem;
+}
