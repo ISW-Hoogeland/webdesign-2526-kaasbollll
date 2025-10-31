@@ -1,45 +1,10 @@
-/************************* DEBUG SETTINGS *************************/
 
-/* Settings to help find errors in your css
-   uncomment temporarily to enable */
-
-/* Add dotted line around all boxes.
-   This makes size of boxes visible.
-   Warning 1: this settings may change your layout.
-   Warning 2: keep the * as selector for all tags when uncommenting. */
-/*  * {border: 1px dotted black;}   */
-  
-/* Add semi-transparant dark background to all boxes
-   The more boxes are on top of eachother the darker tghe background color
-   Warning: keep the * as selector for all tags when uncommenting. */
-/*  * {background-color: rgba(0,0,0,5%);}  */
-
-/************************* BASE SETTINGS *************************/
-
-/* Settings to make it easier for you
-   uncomment permanently when you understand the meaning of them */
-   
-/* border is included in width en height of boxes */
-/* * { box-sizing: border-box; } */
-
-/* standard margin 0 pixels */
-/* * { margin: 0px; } */
-
-/* hide everything larger than the dimensions of the div-box
-   important side effect: browser usually doesn't take floats
-   into account when determining height of div, leading to 
-   div with height zero. With this settings, height of div-boxes
-   willl be large enough to fit floats inside. */
-/* div { overflow: hidden; }
-
-/************************* YOUR SETTINGS *************************/
-
-/* add your css here, feel free to use comments and order them logically for better readability */
 :root{
    --bg-color: #e59d32;
    --tnf-color: #66b4e8;
    --color: #000000;
    --strong: #da0606;
+   --button: #ff0000;
 }
 
 body{
@@ -52,6 +17,7 @@ body{
    " footer footer" ;
    grid-template-columns: 3fr 1fr;
    grid-template-rows: 120px 1fr 60px;
+   margin-left: 5px;
 }
 
 header{
@@ -147,5 +113,13 @@ nav a:hover{
 
 nav a{
    padding:5px;
+}
+
+button{
+   background-color: var(--button);
+   color: var(--color);
+   border-color: var(--button);
+   margin-top: 20px;
+   border-radius: 20px;
 }
 
